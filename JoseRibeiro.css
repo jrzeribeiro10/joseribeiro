@@ -315,27 +315,26 @@ section h2 {
     background-color: #053354;
 }
 
-/* Modal para exibir a imagem em tamanho grande */
 .image {
-    display: none; /* Inicialmente, o modal está oculto */
-    position: fixed; /* O modal fica fixo na tela */
-    z-index: 1000; /* Certifica-se de que o modal esteja sobreposto a outros elementos */
+    display: none;
+    position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%; /* O modal cobre toda a tela */
+    width: 100%;
     height: 100%;
-    overflow: auto; /* Se o conteúdo for maior que a tela, permite rolar */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
-    display: flex; /* Usa flexbox para centralizar o conteúdo */
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .big-content {
-    max-width: 80%; /* A imagem ocupará no máximo 80% da largura da tela */
-    max-height: 80%; /* A imagem ocupará no máximo 80% da altura da tela */
-    border-radius: 10px; /* Bordas arredondadas para a imagem */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Sombra para destacar a imagem */
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .image .close {
@@ -354,10 +353,9 @@ section h2 {
     color: #999;
 }
 
-/* Para telas menores (mobile) */
 @media screen and (max-width: 768px) {
     .big-content {
-        max-width: 90%; /* Ajusta o tamanho da imagem no modal para telas menores */
+        max-width: 90%;
         max-height: 90%;
     }
 
@@ -367,7 +365,6 @@ section h2 {
         right: 25px;
     }
 }
-
 
 /* Skills section */
 

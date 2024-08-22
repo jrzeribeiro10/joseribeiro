@@ -75,27 +75,23 @@ document.addEventListener('DOMContentLoaded', function() {
         updateGalleryImage();
     });
 
- // Modal para exibir imagem em tamanho grande
     const bigImageGallery = document.getElementById('bigImageGallery');
     const bigImage = document.getElementById('bigImage');
     const closeModal = document.querySelector('.image .close');
 
-    // Verifique se o modal está inicialmente oculto
-    bigImageGallery.style.display = 'none'; // Garante que o modal esteja oculto ao iniciar
+    bigImageGallery.style.display = 'none';
 
     document.querySelectorAll('.gallery-image').forEach(img => {
         img.addEventListener('click', function() {
-            bigImageGallery.style.display = 'flex'; // Muda para flex para centralizar a imagem
+            bigImageGallery.style.display = 'flex';
             bigImage.src = this.src;
         });
     });
 
-    // Fechar o modal
     closeModal.addEventListener('click', function() {
         bigImageGallery.style.display = 'none';
     });
 
-    // Fechar o modal clicando fora da imagem
     bigImageGallery.addEventListener('click', function(event) {
         if (event.target === bigImageGallery) {
             bigImageGallery.style.display = 'none';
