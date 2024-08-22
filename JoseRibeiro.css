@@ -155,6 +155,10 @@ section h2 {
     max-width: 100%;
 }
 
+section p {
+    max-width: 600px;
+}
+
 /* About section */
 
 .about-content {
