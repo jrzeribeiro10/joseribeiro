@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'FalconsFont';
+    src: url('fonts/falcons_font/FalconsFont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratSemiBold';
+    src: url('fonts/Montserrat/static/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #053354;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #35a7c1;
+}
+
+#scrollToTopBtn::after {
+    content: "↑";
+    margin-left: 5px;
+}
+
+p {
+    font-family: 'Montserrat', cursive;
+}
+
+h2 {
+    font-family: 'MontserratBold', sans-serif;
+    font-size: 1.75rem;
+    color: #053354;
+}
+
+h3{
+    font-family: 'MontserratSemiBold', sans-serif;
+    font-size: 1.25rem;
+    color: #053354;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#35a7c1, #053354);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #053354;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+header h1 {
+    font-family: 'FalconsFont', Arial, sans-serif;
+    text-align: center;
+    padding: 5px;
+    color: white;   
+    margin: 0;
+}
+
+header p {
+    font-family: 'MontserratLight', cursive;
+    font-size: 1.0rem;
+    color: white;   
+    margin: 0.5rem 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', cursive;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    transform: scale(1.1);
+    color: #35a7c1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background-color: #bceefb;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+section h2 {
+    margin-top: 0;
+    text-align: center; 
+    max-width: 100%;
+}
+
+/* About section */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    text-align: left;
+    margin-top: -1rem;
+    flex-direction: row;
+}
+
+.about-content .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: justify;
+        max-width: 100%;
+    }
+
+    .about-content .profile {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Portfolio section */
+
+#projects .project {
+    margin-bottom: 1rem;
+}
+
+.project {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.expand-video, .open-gallery{
+    font-family: 'MontserratLight', cursive;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #053354; 
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .expand-video, .open-gallery {
+        padding: 8px 16px;
+        font-size: 14px;
+        margin: 8px 4px;
+    }
+}
+
+.expand-video:hover, .open-gallery:hover {
+    transform: scale(1.1);
+    background-color: #053354;
+}
+
+.video-container {
+    display: none; 
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 560px; 
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container.show{
+    display: block;
+    opacity: 1;
+}
+
+.gallery-container {
+    width: 100%;
+    max-width: 560px; 
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+}
+
+.gallery-container.show {
+    display: block;
+    opacity: 1;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    max-height: 315px;
+    object-fit: contain;
+    display: none;
+    margin: 0 auto;
+}
+
+.gallery-image.active {
+    display: block;
+}
+
+.prev, .next {
+    font-family: 'MontserratLight', cursive;
+    position: absolute;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0533547f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #053354;
+}
+
+/* Modal para exibir a imagem em tamanho grande */
+.image {
+    display: none; /* Inicialmente, o modal está oculto */
+    position: fixed; /* O modal fica fixo na tela */
+    z-index: 1000; /* Certifica-se de que o modal esteja sobreposto a outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* O modal cobre toda a tela */
+    height: 100%;
+    overflow: auto; /* Se o conteúdo for maior que a tela, permite rolar */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.big-content {
+    max-width: 80%; /* A imagem ocupará no máximo 80% da largura da tela */
+    max-height: 80%; /* A imagem ocupará no máximo 80% da altura da tela */
+    border-radius: 10px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Sombra para destacar a imagem */
+}
+
+.image .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.image .close:hover,
+.image .close:focus {
+    color: #999;
+}
+
+/* Para telas menores (mobile) */
+@media screen and (max-width: 768px) {
+    .big-content {
+        max-width: 90%; /* Ajusta o tamanho da imagem no modal para telas menores */
+        max-height: 90%;
+    }
+
+    .image .close {
+        font-size: 30px;
+        top: 15px;
+        right: 25px;
+    }
+}
+
+
+/* Skills section */
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+#skills ul li {
+    font-family: 'MontserratLight', cursive;
+    display: inline-block;
+    background-color: #105383;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+}
+
+/* Experience section */
+
+#experience {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#experience h3, #experience p {
+    margin: 0;
+    padding: 0;
+}
+
+#experience ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    width: fit-content;
+}
+
+#experience ul::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ccc;
+}
+
+#experience li {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 40px;
+    text-align: left;
+}
+
+#experience li::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #053354;
+    border-radius: 50%;
+}
+
+/* Contact section */
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.contact-item {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-item img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    fill: #053354;
+}
+
+.contact-item:hover img {
+    transform: scale(1.1);
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: -1rem;
+    text-align: center;
+    color: #fff;
+}
