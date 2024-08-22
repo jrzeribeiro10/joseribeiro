@@ -211,6 +211,26 @@ section p {
     margin-bottom: 2rem;
 }
 
+.line-with-circle {
+    width: 350px;
+    height: 2px;
+    position: relative;
+    margin: 40px auto;
+    background-color: #35a7c1;
+}
+  
+.line-with-circle::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #053354;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  
+
 .expand-video, .open-gallery{
     font-family: 'MontserratLight', cursive;
     display: inline-block;
@@ -381,7 +401,7 @@ section p {
 #skills ul li {
     font-family: 'MontserratLight', cursive;
     display: inline-block;
-    background-color: #105383;
+    background-color: #2e91a7;
     color: #fff;
     padding: 0.5rem 1rem;
     margin: 0.5rem;
@@ -415,7 +435,7 @@ section p {
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: #ccc;
+    background-color: #35a7c1;
 }
 
 #experience li {
