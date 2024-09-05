@@ -229,9 +229,9 @@ section p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}  
+}
 
-.expand-video, .open-gallery{
+.expand-video, .open-gallery, .Go-to-Blog {
     font-family: 'MontserratLight', cursive;
     display: inline-block;
     padding: 10px 20px;
@@ -239,21 +239,21 @@ section p {
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    background-color: #053354; 
+    background-color: #053354;
     color: white;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 @media (max-width: 768px) {
-    .expand-video, .open-gallery {
+    .expand-video, .open-gallery, .Go-to-Blog {
         padding: 8px 16px;
         font-size: 14px;
         margin: 8px 4px;
     }
 }
 
-.expand-video:hover, .open-gallery:hover {
+.expand-video:hover, .open-gallery:hover, .Go-to-Blog:hover {
     transform: scale(1.1);
     background-color: #053354;
 }
