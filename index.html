@@ -1,308 +1,542 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>José Ribeiro</title>
+    <title>José Ribeiro — Software Developer | Unity, Unreal, AR/VR &amp; Android</title>
+    <meta name="description" content="José Ribeiro — software developer from Porto, Portugal. Games and immersive AR, VR and 3D experiences in Unity and Unreal Engine, plus Android apps in Kotlin.">
+    <meta name="author" content="José Ribeiro">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#060b12">
+
+    <!-- If you move the site to another address (custom domain), update the URL in these
+         tags, in sitemap.xml and in robots.txt. -->
+    <link rel="canonical" href="https://jrzeribeiro10.github.io/joseribeiro/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="José Ribeiro">
+    <meta property="og:title" content="José Ribeiro — Software Developer">
+    <meta property="og:description" content="Software developer from Porto, Portugal. Games and immersive AR, VR and 3D experiences with Unity and Unreal Engine, plus native Android apps with Kotlin.">
+    <meta property="og:url" content="https://jrzeribeiro10.github.io/joseribeiro/">
+    <meta property="og:image" content="https://jrzeribeiro10.github.io/joseribeiro/images/profile.jpg">
+    <meta property="og:image:alt" content="José Ribeiro">
+    <meta property="og:locale" content="en_GB">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="José Ribeiro — Software Developer">
+    <meta name="twitter:description" content="Games and immersive AR, VR and 3D experiences with Unity and Unreal Engine, plus native Android apps with Kotlin.">
+    <meta name="twitter:image" content="https://jrzeribeiro10.github.io/joseribeiro/images/profile.jpg">
+
+    <link rel="icon" href="images/profile.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "José Ribeiro",
+        "givenName": "José",
+        "familyName": "Ribeiro",
+        "jobTitle": "Software Developer",
+        "description": "Software developer specialised in Unity, Unreal Engine, AR, VR and 3D interactive experiences, and native Android apps with Kotlin.",
+        "url": "https://jrzeribeiro10.github.io/joseribeiro/",
+        "image": "https://jrzeribeiro10.github.io/joseribeiro/images/profile.jpg",
+        "email": "mailto:jrzeribeiro10@gmail.com",
+        "telephone": "+351917376065",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Porto",
+            "addressCountry": "PT"
+        },
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Porto",
+            "department": "Videogames and Multimedia Applications"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Exaud"
+        },
+        "knowsAbout": [
+            "Software Development",
+            "Game Development",
+            "Unity",
+            "Unreal Engine",
+            "Augmented Reality",
+            "Virtual Reality",
+            "3D Development",
+            "Android App Development",
+            "Android Studio",
+            "Kotlin",
+            "C#",
+            "C++",
+            "Photogrammetry"
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/in/joseribeiro10/",
+            "https://github.com/jrzeribeiro10",
+            "https://www.youtube.com/channel/UCKavB1bPn_ZTy3ZmkH_n4Wg/"
+        ]
+    }
+    </script>
     <link rel="stylesheet" href="JoseRibeiro.css">
-    <script src="JoseRibeiro.js"></script>
+    <script src="JoseRibeiro.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>José Ribeiro</h1>
-        <p>Software Developer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <a href="#hero" class="brand" aria-label="José Ribeiro — home">
+                <span class="brand-mark">JR</span>
+                <span class="brand-name">José Ribeiro</span>
+            </a>
+
+            <nav class="site-nav" id="siteNav" aria-label="Main">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Portfolio</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.8" x2="12" y2="4.2"/><line x1="12" y1="19.8" x2="12" y2="22.2"/><line x1="1.8" y1="12" x2="4.2" y2="12"/><line x1="19.8" y1="12" x2="22.2" y2="12"/><line x1="4.6" y1="4.6" x2="6.3" y2="6.3"/><line x1="17.7" y1="17.7" x2="19.4" y2="19.4"/><line x1="4.6" y1="19.4" x2="6.3" y2="17.7"/><line x1="17.7" y1="6.3" x2="19.4" y2="4.6"/></svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/></svg>
+                </button>
+                <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        <main>
-            <section id="about">
-                <h2>About</h2>
-                <div class="about-content">
-                    <img src="images/profile.jpg" alt="Fhoto from José Ribeiro" class="profile">
+    <main>
+        <!-- ============ HERO ============ -->
+        <section id="hero" class="hero">
+            <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+            <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+            <div class="hero-grid" aria-hidden="true"></div>
+
+            <div class="hero-inner">
+                <p class="hero-badge"><span class="dot"></span> Available for new projects</p>
+                <h1 class="hero-title">José Ribeiro</h1>
+                <p class="hero-role">
+                    <span class="hero-role-static">Software Developer</span>
+                    <span class="hero-role-sep" aria-hidden="true">/</span>
+                    <span class="hero-role-rotator" id="roleRotator" aria-hidden="true"></span>
+                </p>
+                <p class="hero-text">
+                    I build immersive <strong>VR</strong>, <strong>AR</strong> and <strong>3D</strong> experiences with
+                    Unity and Unreal Engine, and native <strong>Android apps</strong> with Kotlin — from
+                    photogrammetry-driven heritage apps to multiplayer virtual meetings.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View my work</a>
+                    <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                </div>
+                <ul class="hero-stats">
+                    <li><b data-count="8">0</b><span>Featured projects</span></li>
+                    <li><b data-count="2">0</b><span>Engines</span></li>
+                    <li><b data-count="2021" data-plain="true">0</b><span>At Exaud since</span></li>
+                </ul>
+            </div>
+
+            <a href="#about" class="scroll-hint" aria-label="Scroll to about">
+                <span class="mouse"><span></span></span>
+                Scroll
+            </a>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section id="about" class="section">
+            <div class="wrap">
+                <p class="eyebrow reveal">01 — Who I am</p>
+                <h2 class="section-title reveal">About</h2>
+
+                <div class="about-grid">
+                    <div class="about-media reveal">
+                        <div class="photo-frame">
+                            <img src="images/profile.jpg" alt="Photo of José Ribeiro" class="profile">
+                        </div>
+                        <div class="about-tags">
+                            <span>Porto, Portugal</span>
+                            <span>UPorto — Videogames &amp; Multimedia</span>
+                        </div>
+                    </div>
+
                     <div class="about-text">
-                        <p>I'm José Ribeiro, a young software developer with intensive experience in Unity and Unreal built over the past 3 years. I've been working on projects dealing with VR, AR, and 3D environments, always trying to put my skills into practice and be up to date with the evolution of the industry. I graduated from the University of Porto with a degree in Videogames and Multimedia Applications, which gave me good core bases in both technical and creative game development.</p>
-                        <p>Apart from my academic background, I have gained very useful professional experience by working on game development projects throughout my summer holidays. I have always been in love with the creation of immersive worlds and interactive experiences that keep moving me forward to study new technologies and methodologies available in the field.</p>
-                        <p>I am a developer who loves collaborative environments where my experience would be useful and, at the same time, learning from others. Always up for a challenge, pushing the limits of how much can be achieved in game development is something that interests me. </p>
-                    </div>  
+                        <p class="reveal">I'm José Ribeiro, a young software developer with intensive experience in Unity and Unreal built over the past 3 years. I've been working on projects dealing with VR, AR, and 3D environments, always trying to put my skills into practice and be up to date with the evolution of the industry. I graduated from the University of Porto with a degree in Videogames and Multimedia Applications, which gave me good core bases in both technical and creative game development.</p>
+                        <p class="reveal">Apart from my academic background, I have gained very useful professional experience by working on game development projects throughout my summer holidays. I have always been in love with the creation of immersive worlds and interactive experiences that keep moving me forward to study new technologies and methodologies available in the field.</p>
+                        <p class="reveal">Beyond game engines, I also build mobile applications. I work with Kotlin in Android Studio to develop native Android apps, which lets me take an idea all the way from a prototype to something running on a phone — and it pairs naturally with the AR work I already do on mobile.</p>
+                        <p class="reveal">I am a developer who loves collaborative environments where my experience would be useful and, at the same time, learning from others. Always up for a challenge, pushing the limits of how much can be achieved in game development is something that interests me.</p>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="projects">
-                <h2>Portfolio</h2>
-                <div class="project">
-                    <h3>AR Romanesque Route</h3>
-                    <p>I developed this augmented reality app featuring three monuments from the Romanesque Route in Portugal. The models were crafted using photogrammetry, and the app was built with Unity.</p>
-                    <button class="expand-video">Expand Video</button>
-                    <button class="open-gallery">Open Gallery</button>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/z0hIPLS_dYM?si=nLcp76MnF6mIimSk" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-container">
-                        <button class="prev">Previous</button>
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (0).jpg" alt="Gallery Image" style="display: block;">
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (1).jpg" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (2).jpg" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (3).jpg" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (4).jpg" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (5).jpg" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (6).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (7).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (8).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ARRotaRomanico/ARRR (9).png" alt="Gallery Image" style="display:none;">
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-                <div class="line-with-circle"></div>
-                <div class="project">
-                    <h3>AR Inside Navigation</h3>
-                    <p>I developed this app in Unity that guides users to a specified point inside a house. The app calculates the fastest route and provides a detailed plan.</p>
-                    <button class="expand-video">Expand Video</button>
-                    <button class="open-gallery">Open Gallery</button>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DCdZstJdLsA" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-container">
-                        <button class="prev">Previous</button>
-                        <img class="gallery-image" src="images/InsideNavigation/ARIN (1).jpg" alt="Gallery Image" style="display: block;">
-                        <img class="gallery-image" src="images/InsideNavigation/ARIN (2).jpg" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/InsideNavigation/ARIN (3).jpg" alt="Gallery Image" style="display:none;">
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-                <div class="line-with-circle"></div>
-                <div class="project">
-                    <h3>Romanesque Route - Virtual Experience</h3>
-                    <p>I developed this audio-visual experience centered on the Romanesque Route (Rota do Românico, Portugal). The models were created using photogrammetry and the project was built in Unreal Engine 5.</p>
-                    <button class="expand-video">Expand Video</button>
-                    <button class="open-gallery">Open Gallery</button>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mB8AuLNTKgo?si=ilhw-4eh1UTgdeKf" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-container">
-                        <button class="prev">Previous</button>
-                        <img class="gallery-image" src="images/RotaRomanico/RR (0).png" alt="Gallery Image" style="display: block;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (1).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (2).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (3).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (4).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (5).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (6).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (7).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (8).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (9).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (10).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/RotaRomanico/RR (11).png" alt="Gallery Image" style="display:none;">
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-                <div class="line-with-circle"></div>
-                <div class="project">
-                    <h3>Exaud Meets</h3>
-                    <p>
-                        I have worked on an internal project called Exaud Meets, a 3D application meant for virtual meetings. In this project, I have performed very different tasks, from feature implementation to bug fixing. Scrum was followed for the management of the project, and version control was done on Git. I have been part of the code review process for code quality and coherence.
-                        The project was implemented with model-view-controller architecture, using Photon Unity Networking - PUN 2 - for real-time multi-user interaction. During the whole development, my responsibilities included implementing the calendar, animations, performance optimization, enhancements in lighting, physics, and the implementation of communication. My contribution accordingly spreads over most aspects of the project; hence, I have hands-on experience with everything, starting from technical improvements up to feature development.
-                    </p>
-                    <button class="Go-to-Blog" onclick="window.open('https://exaud.com/blog/exaud-meets-inside-teams-project-journey', '_blank');">Go to Blog</button>
-                    <button class="open-gallery">Open Gallery</button>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mB8AuLNTKgo?si=ilhw-4eh1UTgdeKf" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-container">
-                        <button class="prev">Previous</button>
-                        <img class="gallery-image" src="images/ExaudMeets/EM1.webp" alt="Gallery Image" style="display: block;">
-                        <img class="gallery-image" src="images/ExaudMeets/EM2.webp" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ExaudMeets/EM3.webp" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/ExaudMeets/EM4.webp" alt="Gallery Image" style="display:none;">
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-                <div class="line-with-circle"></div>
-                <div class="project">
-                    <h3>A.S.S (Airplane Saviour Simulator)</h3>
-                    <p>The project began in mid-September 2020 and lasted for six months. I was directly involved with the Game and Level Design department, as well as programming mini-games and game mechanics. The game is an asymmetrical cooperative experience where two players work together to prevent a plane from crashing. One player provides information to solve puzzles, while the other follows their instructions.</p>
-                    <button class="expand-video">Expand Video</button>
-                    <button class="open-gallery">Open Gallery</button>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PACCUY87nng" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-container">
-                        <button class="prev">Previous</button>
-                        <img class="gallery-image" src="images/Ass/Ass (1).jpeg" alt="Gallery Image" style="display: block;">
-                        <img class="gallery-image" src="images/Ass/Ass (2).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (3).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (4).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (5).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (6).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (7).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (8).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (9).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (10).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (11).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Ass/Ass (12).png" alt="Gallery Image" style="display:none;">
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-                <div class="line-with-circle"></div>
-                <div class="project">
-                    <h3>SoW (Steel On Wheels)</h3>
-                    <p>Steel On Wheels was the first major 3D project I worked on. It is a racing and combat game. For this project, I was directly involved in programming (developing Artificial Intelligence (AI) and UI), as well as Game and Level Design.</p>
-                    <button class="expand-video">Expand Video</button>
-                    <button class="open-gallery">Open Gallery</button>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/si-dT2c5ogk?si=7u9ykPYbKtbnOv31" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-container">
-                        <button class="prev">Previous</button>
-                        <img class="gallery-image" src="images/Sow/Sow (1).png" alt="Gallery Image" style="display: block;">
-                        <img class="gallery-image" src="images/Sow/Sow (2).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Sow/Sow (3).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Sow/Sow (4).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Sow/Sow (5).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Sow/Sow (6).jpg" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Sow/Sow (7).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Sow/Sow (8).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Sow/Sow (9).png" alt="Gallery Image" style="display:none;">
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-                <div class="line-with-circle"></div>
-                <div class="project">
-                    <h3>Kiro</h3>
-                    <p>Kiro is a project I initially conceived and worked on during the first semester of my second year, over a period of three months, as part of Game Design I. I was directly involved in Game Design, Level Design, and artistic production. The game is a 2D platformer/puzzle where the player controls a character wielding a multi-functional weapon.</p>
-                    <button class="expand-video">Expand Video</button>
-                    <button class="open-gallery">Open Gallery</button>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mCDveG2wBww" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-container">
-                        <button class="prev">Previous</button>
-                        <img class="gallery-image" src="images/Kiro/Kiro (1).png" alt="Gallery Image" style="display: block;">
-                        <img class="gallery-image" src="images/Kiro/Kiro (2).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Kiro/Kiro (3).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Kiro/Kiro (4).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Kiro/Kiro (5).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Kiro/Kiro (6).png" alt="Gallery Image" style="display:none;">
-                        <button class="next">Next</button>
-                    </div>
-                </div>
-                <div class="line-with-circle"></div>
-                <div class="project">
-                    <h3>PopCorn 2D Game</h3>
-                    <p>PopCorn 2D Game is a project I designed and built for my 1st Year Programming Languages course. Created in just one week, it is a small 2D platformer/shooter where the player controls a character who moves, shoots, and collects objects to increase their score.</p>
-                    <button class="expand-video">Expand Video</button>
-                    <button class="open-gallery">Open Gallery</button>
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hDDKcwfKxNw?si=vTh7BoWnKb2bPtfx" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="gallery-container">
-                        <button class="prev">Previous</button>
-                        <img class="gallery-image" src="images/Popcorn/Popcorn (0).png" alt="Gallery Image" style="display: block;">
-                        <img class="gallery-image" src="images/Popcorn/Popcorn (1).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Popcorn/Popcorn (2).png" alt="Gallery Image" style="display:none;">
-                        <img class="gallery-image" src="images/Popcorn/Popcorn (3).png" alt="Gallery Image" style="display:none;">
-                        <button class="next">Next</button>
-                    </div>
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects" class="section section-alt">
+            <div class="wrap">
+                <p class="eyebrow reveal">02 — Selected work</p>
+                <h2 class="section-title reveal">Portfolio</h2>
+                <p class="section-lead reveal">A selection of the work I can show publicly — games, AR/VR apps and interactive experiences, from university and professional projects to things I build on my own time. Open a card for the video and the full gallery.</p>
+
+                <div class="filters reveal" id="projectFilters" role="group" aria-label="Filter projects">
+                    <button class="chip is-active" data-filter="all" type="button">All</button>
+                    <button class="chip" data-filter="Unity" type="button">Unity</button>
+                    <button class="chip" data-filter="Unreal Engine" type="button">Unreal</button>
+                    <button class="chip" data-filter="AR" type="button">AR</button>
+                    <button class="chip" data-filter="Game Design" type="button">Game Design</button>
                 </div>
 
-                <div id="bigImageGallery" class="image">
-                    <span class="close">&times;</span>
-                    <img class="big-content" id="bigImage">
+                <div class="project-grid" id="projectGrid">
+
+                    <article class="project-card reveal" tabindex="0" role="button" aria-label="Open project: AR Romanesque Route"
+                        data-title="AR Romanesque Route"
+                        data-tags="Unity,AR,Photogrammetry"
+                        data-video="z0hIPLS_dYM"
+                        data-gallery='["images/ARRotaRomanico/ARRR (0).jpg","images/ARRotaRomanico/ARRR (1).jpg","images/ARRotaRomanico/ARRR (2).jpg","images/ARRotaRomanico/ARRR (3).jpg","images/ARRotaRomanico/ARRR (4).jpg","images/ARRotaRomanico/ARRR (5).jpg","images/ARRotaRomanico/ARRR (6).png","images/ARRotaRomanico/ARRR (7).png","images/ARRotaRomanico/ARRR (8).png","images/ARRotaRomanico/ARRR (9).png"]'>
+                        <div class="card-media">
+                            <img src="images/ARRotaRomanico/ARRR (0).jpg" alt="AR Romanesque Route" loading="lazy">
+                            <span class="card-open">View project</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>AR Romanesque Route</h3>
+                            <p class="card-desc">I developed this augmented reality app featuring three monuments from the Romanesque Route in Portugal. The models were crafted using photogrammetry, and the app was built with Unity.</p>
+                            <ul class="card-tags"><li>Unity</li><li>AR</li><li>Photogrammetry</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" tabindex="0" role="button" aria-label="Open project: AR Inside Navigation"
+                        data-title="AR Inside Navigation"
+                        data-tags="Unity,AR,Navigation"
+                        data-video="DCdZstJdLsA"
+                        data-gallery='["images/InsideNavigation/ARIN (1).jpg","images/InsideNavigation/ARIN (2).jpg","images/InsideNavigation/ARIN (3).jpg"]'>
+                        <div class="card-media">
+                            <img src="images/InsideNavigation/ARIN (1).jpg" alt="AR Inside Navigation" loading="lazy">
+                            <span class="card-open">View project</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>AR Inside Navigation</h3>
+                            <p class="card-desc">I developed this app in Unity that guides users to a specified point inside a house. The app calculates the fastest route and provides a detailed plan.</p>
+                            <ul class="card-tags"><li>Unity</li><li>AR</li><li>Navigation</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" tabindex="0" role="button" aria-label="Open project: Romanesque Route Virtual Experience"
+                        data-title="Romanesque Route — Virtual Experience"
+                        data-tags="Unreal Engine,Photogrammetry,3D"
+                        data-video="mB8AuLNTKgo"
+                        data-gallery='["images/RotaRomanico/RR (0).png","images/RotaRomanico/RR (1).png","images/RotaRomanico/RR (2).png","images/RotaRomanico/RR (3).png","images/RotaRomanico/RR (4).png","images/RotaRomanico/RR (5).png","images/RotaRomanico/RR (6).png","images/RotaRomanico/RR (7).png","images/RotaRomanico/RR (8).png","images/RotaRomanico/RR (9).png","images/RotaRomanico/RR (10).png","images/RotaRomanico/RR (11).png"]'>
+                        <div class="card-media">
+                            <img src="images/RotaRomanico/RR (0).png" alt="Romanesque Route virtual experience" loading="lazy">
+                            <span class="card-open">View project</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Romanesque Route — Virtual Experience</h3>
+                            <p class="card-desc">I developed this audio-visual experience centered on the Romanesque Route (Rota do Românico, Portugal). The models were created using photogrammetry and the project was built in Unreal Engine 5.</p>
+                            <ul class="card-tags"><li>Unreal Engine 5</li><li>Photogrammetry</li><li>3D</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" tabindex="0" role="button" aria-label="Open project: Exaud Meets"
+                        data-title="Exaud Meets"
+                        data-tags="Unity,Multiplayer,Professional"
+                        data-link="https://exaud.com/blog/exaud-meets-inside-teams-project-journey"
+                        data-link-label="Read the blog post"
+                        data-gallery='["images/ExaudMeets/EM1.webp","images/ExaudMeets/EM2.webp","images/ExaudMeets/EM3.webp","images/ExaudMeets/EM4.webp"]'>
+                        <div class="card-media">
+                            <img src="images/ExaudMeets/EM1.webp" alt="Exaud Meets" loading="lazy">
+                            <span class="card-open">View project</span>
+                            <span class="card-flag">Professional</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Exaud Meets</h3>
+                            <p class="card-desc">An internal 3D application for virtual meetings, built on a model-view-controller architecture with Photon Unity Networking (PUN 2) for real-time multi-user interaction.</p>
+                            <ul class="card-tags"><li>Unity</li><li>PUN 2</li><li>Scrum</li></ul>
+                        </div>
+                        <div class="card-full" hidden>
+                            <p>I have worked on an internal project called Exaud Meets, a 3D application meant for virtual meetings. In this project, I have performed very different tasks, from feature implementation to bug fixing. Scrum was followed for the management of the project, and version control was done on Git. I have been part of the code review process for code quality and coherence.</p>
+                            <p>The project was implemented with model-view-controller architecture, using Photon Unity Networking - PUN 2 - for real-time multi-user interaction. During the whole development, my responsibilities included implementing the calendar, animations, performance optimization, enhancements in lighting, physics, and the implementation of communication. My contribution accordingly spreads over most aspects of the project; hence, I have hands-on experience with everything, starting from technical improvements up to feature development.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" tabindex="0" role="button" aria-label="Open project: Airplane Saviour Simulator"
+                        data-title="A.S.S — Airplane Saviour Simulator"
+                        data-tags="Unity,Game Design,Co-op"
+                        data-video="PACCUY87nng"
+                        data-gallery='["images/Ass/Ass (1).jpeg","images/Ass/Ass (2).png","images/Ass/Ass (3).png","images/Ass/Ass (4).png","images/Ass/Ass (5).png","images/Ass/Ass (6).png","images/Ass/Ass (7).png","images/Ass/Ass (8).png","images/Ass/Ass (9).png","images/Ass/Ass (10).png","images/Ass/Ass (11).png","images/Ass/Ass (12).png"]'>
+                        <div class="card-media">
+                            <img src="images/Ass/Ass (1).jpeg" alt="Airplane Saviour Simulator" loading="lazy">
+                            <span class="card-open">View project</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>A.S.S — Airplane Saviour Simulator</h3>
+                            <p class="card-desc">The project began in mid-September 2020 and lasted for six months. I was directly involved with the Game and Level Design department, as well as programming mini-games and game mechanics. The game is an asymmetrical cooperative experience where two players work together to prevent a plane from crashing. One player provides information to solve puzzles, while the other follows their instructions.</p>
+                            <ul class="card-tags"><li>Unity</li><li>Game Design</li><li>Co-op</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" tabindex="0" role="button" aria-label="Open project: Steel On Wheels"
+                        data-title="SoW — Steel On Wheels"
+                        data-tags="Unity,Game Design,3D"
+                        data-video="si-dT2c5ogk"
+                        data-gallery='["images/Sow/Sow (1).png","images/Sow/Sow (2).png","images/Sow/Sow (3).png","images/Sow/Sow (4).png","images/Sow/Sow (5).png","images/Sow/Sow (6).jpg","images/Sow/Sow (7).png","images/Sow/Sow (8).png","images/Sow/Sow (9).png"]'>
+                        <div class="card-media">
+                            <img src="images/Sow/Sow (1).png" alt="Steel On Wheels" loading="lazy">
+                            <span class="card-open">View project</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>SoW — Steel On Wheels</h3>
+                            <p class="card-desc">Steel On Wheels was the first major 3D project I worked on. It is a racing and combat game. For this project, I was directly involved in programming (developing Artificial Intelligence (AI) and UI), as well as Game and Level Design.</p>
+                            <ul class="card-tags"><li>Unity</li><li>AI &amp; UI</li><li>Level Design</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" tabindex="0" role="button" aria-label="Open project: Kiro"
+                        data-title="Kiro"
+                        data-tags="Unity,Game Design,2D"
+                        data-video="mCDveG2wBww"
+                        data-gallery='["images/Kiro/Kiro (1).png","images/Kiro/Kiro (2).png","images/Kiro/Kiro (3).png","images/Kiro/Kiro (4).png","images/Kiro/Kiro (5).png","images/Kiro/Kiro (6).png"]'>
+                        <div class="card-media">
+                            <img src="images/Kiro/Kiro (1).png" alt="Kiro" loading="lazy">
+                            <span class="card-open">View project</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Kiro</h3>
+                            <p class="card-desc">Kiro is a project I initially conceived and worked on during the first semester of my second year, over a period of three months, as part of Game Design I. I was directly involved in Game Design, Level Design, and artistic production. The game is a 2D platformer/puzzle where the player controls a character wielding a multi-functional weapon.</p>
+                            <ul class="card-tags"><li>2D Platformer</li><li>Game Design</li><li>Art</li></ul>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" tabindex="0" role="button" aria-label="Open project: PopCorn 2D Game"
+                        data-title="PopCorn 2D Game"
+                        data-tags="Unity,2D"
+                        data-video="hDDKcwfKxNw"
+                        data-gallery='["images/Popcorn/Popcorn (0).png","images/Popcorn/Popcorn (1).png","images/Popcorn/Popcorn (2).png","images/Popcorn/Popcorn (3).png"]'>
+                        <div class="card-media">
+                            <img src="images/Popcorn/Popcorn (0).png" alt="PopCorn 2D Game" loading="lazy">
+                            <span class="card-open">View project</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>PopCorn 2D Game</h3>
+                            <p class="card-desc">PopCorn 2D Game is a project I designed and built for my 1st Year Programming Languages course. Created in just one week, it is a small 2D platformer/shooter where the player controls a character who moves, shoots, and collects objects to increase their score.</p>
+                            <ul class="card-tags"><li>2D</li><li>Programming</li><li>1 week</li></ul>
+                        </div>
+                    </article>
+
+                    <!--
+                        To add a project, copy one <article class="project-card"> block above and edit:
+                          data-title    → name shown in the modal
+                          data-tags     → comma separated (a tag matching a filter button also makes it filterable)
+                          data-video    → YouTube ID only, e.g. "z0hIPLS_dYM" (remove the attribute if there is no video)
+                          data-link     → optional external link, with data-link-label for the button text
+                          data-gallery  → JSON array of image paths, in single quotes
+                        The card cover is the <img> inside .card-media, and .card-desc is the short text.
+                        Add an optional <div class="card-full" hidden> with the long description for the modal.
+                    -->
+
+                    <article class="project-card-more reveal">
+                        <h3>And plenty more</h3>
+                        <p>These are the projects I have video and screenshots for. Alongside them I keep building
+                            personal projects, prototypes and experiments — the code for many of them lives on GitHub.</p>
+                        <div class="more-links">
+                            <a href="https://github.com/jrzeribeiro10" target="_blank" rel="noopener" class="btn btn-primary">GitHub</a>
+                            <a href="https://www.youtube.com/channel/UCKavB1bPn_ZTy3ZmkH_n4Wg/" target="_blank" rel="noopener" class="btn btn-ghost">YouTube</a>
+                        </div>
+                    </article>
+
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Unity</li>
-                    <li>Unreal Engine</li>
-                    <li>C#</li>
-                    <li>C++</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Premiere</li>
-                    <li>Blender</li>
-                </ul>
-            </section>
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" class="section">
+            <div class="wrap">
+                <p class="eyebrow reveal">03 — Toolbox</p>
+                <h2 class="section-title reveal">Skills</h2>
 
-            <section id="experience">
-                <h2>Experience</h2>
-                <ul>
-                    <li>
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <h3>Engines &amp; Tools</h3>
+                        <ul class="skill-list">
+                            <li>Unity</li>
+                            <li>Unreal Engine</li>
+                            <li>Android Studio</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>Programming</h3>
+                        <ul class="skill-list">
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li>Kotlin</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>Art &amp; Media</h3>
+                        <ul class="skill-list">
+                            <li>Blender</li>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Premiere</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section id="experience" class="section section-alt">
+            <div class="wrap">
+                <p class="eyebrow reveal">04 — Career</p>
+                <h2 class="section-title reveal">Experience</h2>
+
+                <ol class="timeline">
+                    <li class="timeline-item reveal is-current">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <p class="timeline-date">July 2021 — Now</p>
                         <h3>EXAUD LDA.</h3>
-                        <p>Software Developer</p>
-                        <p>July 2021 - Now</p>
-                        <p>I worked on different Unity and Unreal projects.</p>
+                        <p class="timeline-role">Software Developer</p>
+                        <p class="timeline-desc">I worked on different Unity and Unreal projects.</p>
                     </li>
-                    <li>
-                        <h3>Associacao Futebol do Porto</h3>
-                        <p>Football Referee</p>
-                        <p>November 2019 to December 2022</p>
-                        <p>Weekend job refereeing football games.</p>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <p class="timeline-date">November 2019 — December 2022</p>
+                        <h3>Associação Futebol do Porto</h3>
+                        <p class="timeline-role">Football Referee</p>
+                        <p class="timeline-desc">Weekend job refereeing football games.</p>
                     </li>
-                    <li>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <p class="timeline-date">July 2019 — September 2019</p>
                         <h3>AKI Portugal</h3>
-                        <p>Cashier</p>
-                        <p>July 2019 to September 2019</p>
-                        <p>Part Time Summer Job.</p>
+                        <p class="timeline-role">Cashier</p>
+                        <p class="timeline-desc">Part time summer job.</p>
                     </li>
-                    <li>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <p class="timeline-date">October 2018 — February 2019</p>
                         <h3>Intermarché</h3>
-                        <p>Cashier</p>
-                        <p>October 2018 to February 2019</p>
-                        <p>Part time work while studying.</p>
+                        <p class="timeline-role">Cashier</p>
+                        <p class="timeline-desc">Part time work while studying.</p>
                     </li>
-                    <li>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <p class="timeline-date">July 2018 — August 2018</p>
                         <h3>Lopes LDA.</h3>
-                        <p>Electrician's assistant</p>
-                        <p>July 2018 to August 2018</p>
-                        <p>Part Time Summer Job.</p>
+                        <p class="timeline-role">Electrician's assistant</p>
+                        <p class="timeline-desc">Part time summer job.</p>
                     </li>
-                    <li>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <p class="timeline-date">June 2017 — August 2017</p>
                         <h3>Pizzaria Ricardo</h3>
-                        <p>Waitress</p>
-                        <p>June 2017 to August 2017</p>
-                        <p>Part Time Summer Job.</p>
+                        <p class="timeline-role">Waiter</p>
+                        <p class="timeline-desc">Part time summer job.</p>
                     </li>
-                </ul>
-            </section>
+                </ol>
+            </div>
+        </section>
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <a href="tel:+351917376065" class="contact-item">
-                        <img src="images/phone.svg" alt="Telefone">
-                    </a>
-                    <a href="mailto:jrzeribeiro10@gmail.com" class="contact-item">
-                        <img src="images/email.svg" alt="Email">
-                    </a>
-                    <a href="https://www.linkedin.com/in/joseribeiro10/" target="_blank" class="contact-item">
-                        <img src="images/linkedln.svg" alt="LinkedIn">
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCKavB1bPn_ZTy3ZmkH_n4Wg/" target="_blank" class="contact-item">
-                        <img src="images/youtube.svg" alt="youtube">
-                    </a>
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" class="section">
+            <div class="wrap">
+                <div class="contact-card reveal">
+                    <p class="eyebrow">05 — Say hello</p>
+                    <h2 class="section-title">Let's build something immersive</h2>
+                    <p class="section-lead">Open to game development, AR/VR and 3D interactive projects. The fastest way to reach me is by email.</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:jrzeribeiro10@gmail.com" class="contact-item">
+                            <img src="images/email.svg" alt="" aria-hidden="true">
+                            <span><b>Email</b>jrzeribeiro10@gmail.com</span>
+                        </a>
+                        <a href="tel:+351917376065" class="contact-item">
+                            <img src="images/phone.svg" alt="" aria-hidden="true">
+                            <span><b>Phone</b>+351 917 376 065</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/joseribeiro10/" target="_blank" rel="noopener" class="contact-item">
+                            <img src="images/linkedln.svg" alt="" aria-hidden="true">
+                            <span><b>LinkedIn</b>joseribeiro10</span>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCKavB1bPn_ZTy3ZmkH_n4Wg/" target="_blank" rel="noopener" class="contact-item">
+                            <img src="images/youtube.svg" alt="" aria-hidden="true">
+                            <span><b>YouTube</b>Project showreels</span>
+                        </a>
+                    </div>
                 </div>
-            </section>
-            
-        </main>
-    </div>
+            </div>
+        </section>
+    </main>
 
-    <footer>
-        <p>&copy; José Ribeiro 2024</p>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p>&copy; <span id="year">2024</span> José Ribeiro</p>
+            <p class="footer-note">Built with plain HTML, CSS &amp; JavaScript.</p>
+        </div>
     </footer>
 
-    <button id="scrollToTopBtn" title="Go to top">Top</button>
+    <button id="scrollToTopBtn" type="button" title="Go to top" aria-label="Go to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <!-- ============ PROJECT MODAL ============ -->
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-panel" role="document">
+            <button class="modal-close" type="button" data-close aria-label="Close">&times;</button>
+
+            <header class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <ul class="card-tags" id="modalTags"></ul>
+            </header>
+
+            <div class="modal-tabs" id="modalTabs" role="tablist">
+                <button class="tab" type="button" data-tab="video" role="tab">Video</button>
+                <button class="tab" type="button" data-tab="gallery" role="tab">Gallery</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="tab-panel" data-panel="video">
+                    <div class="video-frame" id="modalVideo"></div>
+                    <p class="video-fallback">
+                        Video not playing?
+                        <a id="modalWatch" target="_blank" rel="noopener">Watch it on YouTube</a>
+                    </p>
+                </div>
+
+                <div class="tab-panel" data-panel="gallery">
+                    <div class="gallery">
+                        <button class="gallery-nav prev" type="button" aria-label="Previous image">&#8249;</button>
+                        <div class="gallery-stage">
+                            <img id="modalImage" alt="Project screenshot">
+                            <span class="gallery-counter" id="galleryCounter"></span>
+                        </div>
+                        <button class="gallery-nav next" type="button" aria-label="Next image">&#8250;</button>
+                    </div>
+                    <div class="thumbs" id="modalThumbs"></div>
+                </div>
+
+                <div class="modal-desc" id="modalDesc"></div>
+                <a class="btn btn-primary modal-link" id="modalLink" target="_blank" rel="noopener" hidden></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox" hidden>
+        <button class="modal-close" type="button" id="lightboxClose" aria-label="Close">&times;</button>
+        <img id="lightboxImage" alt="Full size screenshot">
+    </div>
 </body>
 </html>
