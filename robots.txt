@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Nothing here is private — everything should be indexable.
+Disallow:
+
+Sitemap: https://jrzeribeiro10.github.io/joseribeiro/sitemap.xml
