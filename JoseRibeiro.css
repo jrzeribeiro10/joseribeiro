@@ -1319,10 +1319,11 @@ html[data-theme="light"] .hero-glow-b { background: radial-gradient(circle, rgba
 }
 
 @media (max-width: 480px) {
-    /* Keep the three stats on one row — the labels wrap instead of the items. */
+    /* Keep the stats on one row — the labels wrap instead of the items.
+       auto-fit so the row stays centred whatever the number of stats. */
     .hero-stats {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
         gap: 0.9rem;
     }
     .hero-stats span {
